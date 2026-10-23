@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1720 520"><title>BuildGuide, a plan of a private build</title>
+<style>
+  text { font-family: Consolas, 'Courier New', monospace; }
+  .wall { stroke: #F0B64E; stroke-width: 2.2; }
+  .lbl { opacity: 0; animation: fade .6s ease forwards; }
+  @keyframes draw { to { stroke-dashoffset: 0; } }
+  @keyframes fade { to { opacity: 1; } }
+  @keyframes whisper { to { opacity: .05; } }
+  @keyframes blink { 0%, 100% { opacity: .12; } 50% { opacity: 1; } }
+</style>
+<rect width="1720" height="520" fill="#101018"/>
+<defs><pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1d1d2b" stroke-width="1"/></pattern></defs><rect x="24" y="24" width="1672" height="472" fill="url(#g)"/>
+<rect x="20" y="20" width="1680" height="480" rx="14" fill="none" stroke="#2a2a3c" stroke-width="1.4"/>
+<text x="120" y="66" fill="#F0B64E" font-size="44" font-weight="bold" letter-spacing="12" class="lbl" style="animation-delay:.2s">BUILDGUIDE</text>
+<text x="1180" y="62" text-anchor="end" fill="#6f6c82" font-size="15" letter-spacing="2" class="lbl" style="animation-delay:.4s">multi-role construction platform · sheet 01 · partial disclosure</text>
+<path d="M 120 100 H 1180 V 430 H 120 Z" fill="none" class="wall" style="stroke-dasharray:2780;stroke-dashoffset:2780;animation:draw 1.6s ease-out forwards"/>
+<g class="wall">
+<line x1="480" y1="100" x2="480" y2="190" style="stroke-dasharray:90.0;stroke-dashoffset:90.0;animation:draw .7s ease-out 0.7s forwards"/>
+<line x1="480" y1="240" x2="480" y2="265" style="stroke-dasharray:25.0;stroke-dashoffset:25.0;animation:draw .7s ease-out 0.8s forwards"/>
+<line x1="830" y1="100" x2="830" y2="190" style="stroke-dasharray:90.0;stroke-dashoffset:90.0;animation:draw .7s ease-out 0.9s forwards"/>
+<line x1="830" y1="240" x2="830" y2="265" style="stroke-dasharray:25.0;stroke-dashoffset:25.0;animation:draw .7s ease-out 1.0s forwards"/>
+<line x1="120" y1="265" x2="430" y2="265" style="stroke-dasharray:310.0;stroke-dashoffset:310.0;animation:draw .7s ease-out 1.1s forwards"/>
+<line x1="486" y1="265" x2="770" y2="265" style="stroke-dasharray:284.0;stroke-dashoffset:284.0;animation:draw .7s ease-out 1.2s forwards"/>
+<line x1="826" y1="265" x2="1180" y2="265" style="stroke-dasharray:354.0;stroke-dashoffset:354.0;animation:draw .7s ease-out 1.3s forwards"/>
+<line x1="480" y1="265" x2="480" y2="330" style="stroke-dasharray:65.0;stroke-dashoffset:65.0;animation:draw .7s ease-out 1.4s forwards"/>
+<line x1="480" y1="380" x2="480" y2="430" style="stroke-dasharray:50.0;stroke-dashoffset:50.0;animation:draw .7s ease-out 1.5s forwards"/>
+<line x1="830" y1="265" x2="830" y2="330" style="stroke-dasharray:65.0;stroke-dashoffset:65.0;animation:draw .7s ease-out 1.6s forwards"/>
+<line x1="830" y1="380" x2="830" y2="430" style="stroke-dasharray:50.0;stroke-dashoffset:50.0;animation:draw .7s ease-out 1.7s forwards"/>
+</g>
+<text x="300" y="168" text-anchor="middle" fill="#F0B64E" font-size="21" font-weight="bold" letter-spacing="4" class="lbl" style="animation-delay:2.2s">SCHEMA</text>
+<text x="300" y="194" text-anchor="middle" fill="#c9c6d8" font-size="16" class="lbl" style="animation-delay:2.45s">240 data models</text>
+<text x="655" y="168" text-anchor="middle" fill="#F0B64E" font-size="21" font-weight="bold" letter-spacing="4" class="lbl" style="animation-delay:2.2s">API</text>
+<text x="655" y="194" text-anchor="middle" fill="#c9c6d8" font-size="16" class="lbl" style="animation-delay:2.45s">454 endpoints</text>
+<text x="1005" y="168" text-anchor="middle" fill="#F0B64E" font-size="21" font-weight="bold" letter-spacing="4" class="lbl" style="animation-delay:2.2s">I18N</text>
+<text x="1005" y="194" text-anchor="middle" fill="#c9c6d8" font-size="16" class="lbl" style="animation-delay:2.45s">5 locales · 15 000 keys</text>
+<text x="300" y="328" text-anchor="middle" fill="#F0B64E" font-size="21" font-weight="bold" letter-spacing="4" class="lbl" style="animation-delay:2.2s">TESTS</text>
+<text x="300" y="354" text-anchor="middle" fill="#c9c6d8" font-size="16" class="lbl" style="animation-delay:2.45s">7200+ in the CI gate</text>
+<text x="655" y="328" text-anchor="middle" fill="#F0B64E" font-size="21" font-weight="bold" letter-spacing="4" class="lbl" style="animation-delay:2.2s">AI</text>
+<text x="655" y="354" text-anchor="middle" fill="#c9c6d8" font-size="16" class="lbl" style="animation-delay:2.45s">estimator by photo</text>
+<text x="1005" y="328" text-anchor="middle" fill="#F0B64E" font-size="21" font-weight="bold" letter-spacing="4" class="lbl" style="animation-delay:2.2s">BILLING</text>
+<text x="1005" y="354" text-anchor="middle" fill="#c9c6d8" font-size="16" class="lbl" style="animation-delay:2.45s">ledger · idempotent</text>
+<rect x="1210" y="100" width="480" height="330" fill="none" stroke="#F0B64E" stroke-width="1.4" class="lbl" style="animation-delay:.3s"/>
+<line x1="1210" y1="132" x2="1690" y2="132" stroke="#F0B64E" stroke-width="1" class="lbl" style="animation-delay:.5s"/>
+<text x="1242" y="120" fill="#c9c6d8" font-size="14" font-weight="bold" letter-spacing="6" class="lbl" style="animation-delay:.6s">TITLE BLOCK</text>
+<text x="1242" y="170" fill="#6f6c82" font-size="13" letter-spacing="2" class="lbl" style="animation-delay:1.4s">PROJECT</text>
+<text x="1346" y="170" fill="#F0B64E" font-size="15" font-weight="bold" class="lbl" style="animation-delay:1.4s">BuildGuide</text>
+<text x="1242" y="214" fill="#6f6c82" font-size="13" letter-spacing="2" class="lbl" style="animation-delay:1.4s">FOUNDER</text>
+<text x="1346" y="214" fill="#F0B64E" font-size="15" font-weight="bold" class="lbl" style="animation-delay:1.4s">Igor Vasilyev</text>
+<text x="1242" y="258" fill="#6f6c82" font-size="13" letter-spacing="2" class="lbl" style="animation-delay:1.4s">SURVEY</text>
+<text x="1346" y="258" fill="#F0B64E" font-size="15" font-weight="bold" class="lbl" style="animation-delay:1.4s">11 stages · 111 criteria</text>
+<text x="1242" y="302" fill="#6f6c82" font-size="13" letter-spacing="2" class="lbl" style="animation-delay:1.4s">NORMS</text>
+<text x="1346" y="302" fill="#F0B64E" font-size="15" font-weight="bold" class="lbl" style="animation-delay:1.4s">338 · СП/ГОСТ</text>
+<text x="1242" y="346" fill="#6f6c82" font-size="13" letter-spacing="2" class="lbl" style="animation-delay:1.4s">DOCUMENTS</text>
+<text x="1346" y="346" fill="#F0B64E" font-size="15" font-weight="bold" class="lbl" style="animation-delay:1.4s">133 · self-audited</text>
+<text x="1242" y="390" fill="#6f6c82" font-size="13" letter-spacing="2" class="lbl" style="animation-delay:1.4s">STATUS</text>
+<rect x="1346" y="378" width="11" height="11" fill="#E04462" style="animation:blink 1.3s ease-in-out infinite"/>
+<text x="1368" y="390" fill="#c9c6d8" font-size="15" font-weight="bold" class="lbl" style="animation-delay:1.4s">in development</text>
+<text x="1210" y="462" fill="#6f6c82" font-size="13" letter-spacing="2" class="lbl" style="animation-delay:1.8s">SCALE 1:240 · DIMENSIONS IN FACTS, NOT IN PIXELS</text>
+<text x="650" y="270" text-anchor="middle" fill="#F0B64E" font-size="84" letter-spacing="10" opacity="0" transform="rotate(-7 650 270)" style="animation:whisper .8s ease 3s forwards">PARTIAL DISCLOSURE</text>
+</svg>

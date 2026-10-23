@@ -1,0 +1,26 @@
+name: status
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  rewrite:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python tools/status.py
+      - name: amend the single commit and push
+        run: |
+          git config user.name "Perfect Johny"
+          git config user.email "perfect.models.lab@gmail.com"
+          git add README.md
+          if git diff --cached --quiet; then
+            echo "no change"
+            exit 0
+          fi
+          git commit --amend --no-edit
+          git push --force
